@@ -1,0 +1,167 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title CoffeeCat
+    %link{href: "TelaPrincpial.sass", rel: "stylesheet"}/
+    :css
+      @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+  %body
+    %header
+      %nav#navBar
+        %ul.nav-list
+          %li.cardapio
+            %a{href: "TelaCardapio.haml"} Cardápio
+            %ul.nav-cardapio
+              %li
+                %a{href: ""} Quentes
+              %li
+                %a{href: ""} Frios
+          %li
+            %a{href: "TelaHistoria.haml"} História
+        .nav-logo
+          %a.logo{href: "TelaPrincipal.haml"}
+            %img.logo{alt: "Logo da CoffeCat", src: "img/Logo/Logo-SemFundo.png"}/
+        .mobile-menu
+          .line1
+          .line2
+    .slider
+      .slides
+        %input#radio1{name: "radio-btn", type: "radio"}/
+        %input#radio2{name: "radio-btn", type: "radio"}/
+        %input#radio3{name: "radio-btn", type: "radio"}/
+        %input#radio4{name: "radio-btn", type: "radio"}/
+        .slide.first
+          %div
+            %img{alt: "Slide 1 CoffeCat", src: "/img/slideShow1/backGroundSlideShow1.png"}/
+          .overlay
+          .um
+            %h1 CoffeeCat
+            %p Café com um toque felino
+        .slide
+          %div
+            %img{alt: "Slide 2 CoffeeCat", src: "/img/slideShow2/backGroundSlideShow2.png"}/
+          .dois
+            Conheça nosso
+            %br/
+            Cardápio
+          %img.logoSlide2{alt: "", src: "/img/slideShow2/logoCardapio-SemFundo.png"}/
+          %a{href: "/TelaCardapio.haml"}
+            Cardápio
+        .slide
+          %div
+            %img{alt: "Slide 3 CoffeCat", src: "/img/SlideShow3/GatoCafé.jpg"}/
+          .overlay
+          .tres
+            O que vai querer hoje?
+        .slide
+          %div
+            %img{alt: "Slide 4 CoffeCat", src: "/img/SlideShow4/giphy.gif"}/
+          .quatro
+        .navigation-auto
+          .auto-btn1
+          .auto-btn2
+          .auto-btn3
+          .auto-btn4
+      .manual-navigation
+        %label.manual-btn{for: "radio1"}
+        %label.manual-btn{for: "radio2"}
+        %label.manual-btn{for: "radio3"}
+        %label.manual-btn{for: "radio4"}
+    .introducao
+      .texto-historia
+        %h1 UMA PAIXÃO FELINA
+        %p
+          Tudo começou com um simples gatinho
+          %br/
+          abandonado, que vagava pelas ruas da cidade
+          %br/
+          em busca de comida, em uma manhã, o gato se
+          %br/
+          deparou com um menino bebendo café em uma
+          %br/
+          escada, o aroma do café era ótimo, então, o
+          %br/
+          gato não resistiu, e deitou-se sob o pé do
+          %br/
+          menino, e decidiu adota-lo como seu dono.
+          %br/
+          Juntos, eles firmaram uma forte ligação, que
+          %br/
+          futuramente os fez fundar sua própria cafeteria.
+      %img.graos{alt: "Grãos de Cfé", src: "/img/Telaprincipal/GraosDeCafe-SemFundo.png"}/
+      %img.patas{alt: "Pegadas de Gato", src: "/img/Telaprincipal/Pegadas-SemFundo.png"}/
+      %img.gato{alt: "Gato", src: "/img/Telaprincipal/Gato-SemFundo.jpg"}/
+      %img.cafe{alt: "Café", src: "/img/Telaprincipal/Cafe-SemFundo.jpg"}/
+    .miau
+      %h2 Miau de nosso clientes
+      .txt1
+        %h4 Estética
+        %p
+          A estética da cafeteria me chamou
+          %br/
+          bastante atenção de começo, estava
+          %br/
+          meio receoso de consumir os
+          %br/
+          produtos de um local com vários
+          %br/
+          animais presentes , porém me
+          %br/
+          surpreendi com a qualidade e higiene
+          %br/
+          do local.
+          %br/
+          %br/
+          \- Manhoso, Gatinho
+      .txt2
+        %h4 Encanto
+        %p
+          O ambiente era ótimo, e a comida
+          %br/
+          ainda melhor! Receitas simples bem
+          %br/
+          feitas, com ingredientes de primeira.
+          %br/
+          Estarei de volta!
+          %br/
+          %br/
+          \- Ana, Gata Mãe
+      .txt3
+        %h4 Miados de Alegria
+        %p
+          Meow meow meow meoooow, meoow
+          %br/
+          meow meow, meow, meoowwwww
+          %br/
+          meoww.
+          %br/
+          %br/
+          \- Gleen, Gatinho
+    .body-cardapio
+      %img.logoInversa{alt: "LogoCoffeeCat", src: "/img/Logo/logo-Inversa-SemFundo.png"}/
+      %a{href: "/TelaCardapio.haml"}
+        %img.btn-cardapio-body{alt: "botão-cardápio", src: "/img/Telaprincipal/btn-cardapio-semfundo.png"}/
+      .body-quentes1
+        %a{href: "/TelaCardapio.haml"}
+          %img{alt: "Capuccino", src: "/img/Cardápio/Quentes/Capuccino.jpg"}/
+        %a{href: "/TelaCardapio.haml"} Capuccino
+      .body-quentes2
+        %a{href: "/TelaCardapio.haml"}
+          %img{alt: "Machiato", src: "/img/Cardápio/Quentes/Macchiato.jpg"}/
+        %a{href: "/TelaCardapio.haml"} Machiato
+    %footer
+      %h2
+        Volte
+        %br/
+        Sempre!
+      %h4.numero Número de telefone
+      %p.pnumero (123) 456-7890
+      %h4.mail E-mail
+      %p.pmail coffeecat@gmail.com
+      %h4.endereco Endereço
+      %p.pendereco 123 Anywhere St. Any City, ST 12345
+    %script{src: "TelaPrincipal.js"}

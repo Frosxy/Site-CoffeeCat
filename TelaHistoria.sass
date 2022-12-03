@@ -1,0 +1,345 @@
+* {
+	 margin: 0;
+	 padding: 0;
+}
+ html, body {
+	 height: 100%;
+}
+/*Tudo isso pro header*/
+ @font-face {
+	 font-family: FonteMenu;
+	 src: url(/Fontes/hk-grotesk.zip);
+}
+ header li:hover a {
+	 background-color: #ff914d;
+	 color: #231f20;
+	 transition: 0.5s;
+}
+ header li .historia {
+	 background-color: #ff914d;
+	 color: #231f20;
+}
+ header {
+	 position: fixed;
+	 display: flex;
+	 width: 100%;
+	 height: 30px;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 40px 100px;
+	 transition: 0.5s;
+	 z-index: 100000;
+}
+ header:hover {
+	 background: #231f20;
+}
+ header .logo {
+	 top: -9px;
+	 left: 22vw;
+	 position: relative;
+	 width: 98px;
+	 cursor: pointer;
+}
+ header ul {
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ header ul li {
+	 position: relative;
+	 list-style: none;
+	 top: 50px;
+}
+ header ul li {
+	 margin: 0;
+	 position: relative;
+	 left: 5vw;
+}
+ header ul li a {
+	 font-size: 30px;
+	 color: #ff914d;
+	 letter-spacing: 3px;
+	 text-decoration: none;
+	 padding: 39px;
+	 font-weight: bold;
+	 font-family: FonteMenu;
+	 transition: 0.5s;
+}
+ header ul li a::after {
+	 background: none repeat scroll 0 0 transparent;
+	 bottom: 0;
+	 content: "";
+	 display: block;
+	 top: 60px;
+	 height: 4px;
+	 left: 50%;
+	 position: absolute;
+	 background: #231f20;
+	 transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	 width: 0;
+}
+ .nav-list a:hover:after {
+	 width: 80%;
+	 left: 10%;
+}
+/*FIM - header*/
+/*PARTE DIGRAÇADA DO KRL*/
+ nav ul ul {
+	 display: none;
+}
+ nav ul ul:hover {
+	 display: block;
+	 position: relative;
+	 margin-left: -10vw;
+}
+/*FIM DA DESGRAAAAAAAAÇA*/
+/*MovelBar*/
+ header.sticky {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 background: #231f20;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+/*Fim - movelBar*/
+/*Slideshow*/
+ section.img {
+	 position: relative;
+	 background-image: url(img/TelaHistóriaCoffeeCat/headerTelaHistótia.png);
+	 width: 100vw;
+	 height: 50vw;
+	 background-size: cover;
+	 justify-content: center;
+	 background-repeat: no-repeat;
+}
+ .overlay {
+	 position: absolute;
+	 background-color: black;
+	 top: 0;
+	 left: 0;
+	 width: 100vw;
+	 height: 900px;
+	 opacity: 50%;
+}
+ .HF {
+	 position: relative;
+	 width: 100vw;
+	 height: 50vw;
+	 background-color: #ff914d;
+}
+ h1 {
+	 position: absolute;
+	 color: white;
+	 margin-top: 15%;
+	 margin-left: 12vw;
+	 font-size: 7vw;
+	 font-family: 'Hammersmith One', sans-serif;
+	 letter-spacing: 3px;
+}
+ h2 {
+	 font-size: 4vw;
+	 font-family: 'Hammersmith One', sans-serif;
+}
+ p {
+	 text-align: justify;
+	 font-size: 2vw;
+}
+ .h2gato {
+	 margin-top: 14%;
+	 margin-left: 3vw;
+	 position: absolute;
+	 display: block;
+	 text-align: left;
+}
+ .pgato {
+	 display: block;
+	 position: absolute;
+	 margin-top: 19%;
+	 margin-left: 3vw;
+	 text-align: left;
+}
+ .x {
+	 background: none repeat scroll 0 0 transparent;
+	 bottom: 0;
+	 content: "";
+	 display: block;
+	 height: 4px;
+	 position: absolute;
+	 background: #231f20;
+	 top: 55%;
+	 width: 30%;
+	 left: 35%;
+}
+ div .x:hover {
+	 width: 80%;
+	 left: 15%;
+	/*Metade da Width da .x*/
+}
+ .x2 {
+	 background: none repeat scroll 0 0 transparent;
+	 bottom: 0;
+	 content: "";
+	 display: inline-block;
+	 height: 4px;
+	 position: absolute;
+	 background: #231f20;
+	 top: 55%;
+	 width: 30%;
+	 left: 35%;
+}
+ .h2humano {
+	 margin-top: 14vw;
+	 margin-left: 70vw;
+	 position: absolute;
+	 display: block;
+	 text-align: right;
+}
+ .phumano {
+	 display: block;
+	 position: absolute;
+	 margin-top: 19vw;
+	 margin-left: 60vw;
+	 text-align: right;
+}
+ .empresa {
+	 position: relative;
+	 width: 100vw;
+	 height: 50vw;
+	 background-color: #231f20;
+}
+ .h2empresa {
+	 font-size: 8vw;
+	 top: 30%;
+	 left: 25%;
+	 position: absolute;
+	 color: white;
+}
+ .pempresa {
+	 top: 46%;
+	 left: 26%;
+	 position: absolute;
+	 color: white;
+}
+ footer {
+	 background-image: url(/img/FOOTER.png);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 justify-content: center;
+	 position: relative;
+	 width: 100vw;
+	 height: 25vw;
+}
+ footer h2 {
+	 color: #ff914d;
+	 position: absolute;
+	 left: 80%;
+	 top: 10%;
+	 text-align: center;
+}
+ footer h4 {
+	 position: absolute;
+	 font-size: 2vw;
+	 color: #ff914d;
+	 left: 50%;
+}
+ footer p {
+	 position: absolute;
+	 color: #ff914d;
+	 left: 50%;
+	 font-size: 2vw;
+}
+ .mail {
+	 top: 10%;
+}
+ .pmail {
+	 top: 17%;
+}
+ .numero {
+	 top: 40%;
+}
+ .pnumero {
+	 top: 47%;
+}
+ .endereco {
+	 top: 70%;
+}
+ .pendereco {
+	 top: 77%;
+}
+/*FIM - SlideShow*/
+/*Responsividade*/
+ .mobile-menu {
+	 display: none;
+	 cursor: pointer;
+}
+ .mobile-menu div {
+	 width: 32px;
+	 height: 2px;
+	 background: #ff914d;
+	 margin: 8px;
+	 transition: 0.3s;
+}
+ @media (max-width: 999px) {
+	 body {
+		 overflow-x: hidden;
+	}
+	 header {
+		 height: 0vh;
+	}
+	 .nav-list {
+		 position: absolute;
+		 top: 0vh;
+		 right: 0vw;
+		 left: 0vw;
+		 width: 100vw;
+		 height: 92vh;
+		 background: #231f20;
+		 flex-direction: column;
+		 align-items: center;
+		 justify-content: space-around;
+		 transform: translateX(100%);
+		 transition: transform 0.3s ease-in;
+	}
+	 .nav-list a {
+		 left: 0vw;
+	}
+	 .logo img {
+		 top: -20px;
+		 margin-left: -90px;
+		 width: 10vw;
+	}
+	 .nav-list li {
+		 margin-left: 0;
+		 opacity: 0;
+	}
+	 .mobile-menu {
+		 display: block;
+		 margin-left: -80px;
+		 margin-top: -100px;
+		 padding: 5px;
+	}
+}
+ .nav-list.active {
+	 transform: translateX(0);
+}
+ @keyframes navLinkFade {
+	 from {
+		 opacity: 0;
+		 transform: translateX(50px);
+	}
+	 to {
+		 opacity: 1;
+		 transform: translateX(0);
+	}
+}
+ .mobile-menu.active .line1 {
+	 transform: rotate(-45deg) translate(-7px, 7px);
+}
+ .mobile-menu.active .line2 {
+	 transform: rotate(45deg) translate(0px, 0px);
+}
+/*Fim da responsividade*/
+ 

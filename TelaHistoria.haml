@@ -1,0 +1,86 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title História CoffeeCat
+    %link{href: "TelaHistoria.sass", rel: "stylesheet"}/
+    :css
+      @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+  %body
+    %header
+      %nav#navBar
+        %ul.nav-list
+          %li.cardapio
+            %a{href: "TelaCardapio.html"} Cardápio
+          %li
+            %a.historia{href: "#"} História
+        .nav-logo
+          %a.logo{href: "TelaPrincipal.haml"}
+            %img.logo{alt: "Logo da CoffeCat", src: "img/Logo/Logo-SemFundo.png"}/
+        .mobile-menu
+          .line1
+          .line2
+    %section.img
+      .overlay
+      %h1 História da CoffeeCat
+    .HF
+      %h2.h2gato Visão Felina
+      %p.pgato
+        Tudo começou com um simples gatinho
+        %br/
+        abandonado, que vagava pelas ruas da cidade
+        %br/
+        em busca de comida, em uma manhã, o gato
+        %br/
+        se deparou com um menino bebendo café em
+        %br/
+        uma escada, o aroma do café era ótimo, então,
+        %br/
+        o gato não resistiu, e deitou-se sobre o pé
+        %br/
+        do menino, e decidiu adota-lo como seu dono.
+        %br/
+      .x
+      .x2
+      %h2.h2humano Visão humana
+      %p.phumano
+        Um belo dia, um menino sonhador não estava
+        %br/
+        muito confiante com seu futuro, então decidiu
+        %br/
+        sentar-se em uma escada em frente a sua casa
+        %br/
+        para tomar um café, foi quando ele conheceu
+        %br/
+        seu novo amigo que deitou-se sobre seu pé,
+        %br/
+        após sentir o cheiro de seu delicioso café.
+        %br/
+        Então o menino teve um ideia que mudaria
+        %br/
+        suas vidas.
+        %br/
+    .empresa
+      %h2.h2empresa O Sonho
+      %p.pempresa
+        O menino e o gato juntos construíram um relação muito forte,
+        %br/
+        relação nasceu um sonho, que hoje foi realizado, uma cafeteria,
+        %br/
+        que hoje, recebe diversas pessosas todos os dias.
+        %br/
+    %footer
+      %h2
+        Volte
+        %br/
+        Sempre!
+      %h4.numero Número de telefone
+      %p.pnumero (123) 456-7890
+      %h4.mail E-mail
+      %p.pmail coffeecat@gmail.com
+      %h4.endereco Endereço
+      %p.pendereco 123 Anywhere St. Any City, ST 12345
+    %script{src: "TelaPrincipal.js"}

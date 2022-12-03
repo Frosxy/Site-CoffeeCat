@@ -1,0 +1,55 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Cardápio CoffeeCat
+    %link{href: "TelaCardapio.sass", rel: "stylesheet"}/
+  %body
+    %header
+      %nav#navBar
+        %form{action: "#", method: "get"}
+          %input#quentes{checked: "checked", name: "btn", onclick: "ShowHideDiv(1)", type: "radio"}/
+          %input#frios{name: "btn", onclick: "ShowHideDiv(2)", type: "radio"}/
+        .nav-logo
+          %a.logo{href: "TelaPrincipal.haml"}
+            %img.logo{alt: "Logo da CoffeCat", src: "img/Logo/Logo-SemFundo.png"}/
+        .mobile-menu
+          .line1
+          .line2
+        %label{for: "quentes"} Quentes
+        %label{for: "frios"} Frios
+    #c1.MenuQuentes
+      .itensQuentes
+        .Capuccino
+          %img{alt: "Capuccino", src: "/img/Cardápio/Quentes/Capuccino.jpg"}/
+          %div Capuccino
+        .Expresso
+          %img{alt: "Café Expresso", src: "/img/Cardápio/Quentes/Expresso.png"}/
+          %div Expresso
+        .Macchiato
+          %img{alt: "Café Macchiato", src: "/img/Cardápio/Quentes/Macchiato.jpg"}/
+          %div Macchiato
+        .Americano
+          %img{alt: "Café Americano", src: "/img/Cardápio/Quentes/Americano.jpg"}/
+          %div Americano
+    #c2.Menu-Frios
+      .itensFrios
+        .CafeGeladoSimples
+          %img{alt: "Café Gelado simples", src: "/img/Cardápio/Frios/cafegelado.jpg"}/
+          %div Café gelado simples
+        .Frappe
+          %img{alt: "Café Frappe", src: "/img/Cardápio/Frios/frape.jpg"}/
+          %div Frappe
+        .Frozen
+          %img{alt: "Café Frozen", src: "/img/Cardápio/Frios/frozen-cafe.jpg"}/
+          %div Frozen
+        .CapuccinoGelado
+          %img{alt: "Café Capuccino gelado", src: "/img/Cardápio/Frios/CapuccinoGelado).png"}/
+          %div Capuccino Gelado
+    .icon
+      Cardápio
+      %img{alt: "Cardápio", src: "/img/Cardápio/PataCardapio-SemFundo.png"}/
+    %script{src: "TelaCardapio.js"}
